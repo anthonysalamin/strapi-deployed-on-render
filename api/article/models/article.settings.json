@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "articles",
   "info": {
-    "name": "article"
+    "name": "article",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,6 +17,10 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "Author": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
